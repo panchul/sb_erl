@@ -9,7 +9,12 @@ The ```/doc``` folder of the ```workspace``` repo has the documentation.
 
 I will gradually migrate the notes I have to this repository. So far the here are the snippets:
 
-+ script001
++ script001_try_catch
      - Simple template of an Erlang script
        
+
++ script002_proplists
+     - Moving some props stuff into a script. TODO: refine it later.
+     
+     
      
