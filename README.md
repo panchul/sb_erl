@@ -11,10 +11,9 @@ I will gradually migrate the notes I have to this repository. So far the here ar
 
 + script001_try_catch
      - Simple template of an Erlang script
-       
 
 + script002_proplists
      - Moving some props stuff into a script. TODO: refine it later.
-     
-     
+
+
      

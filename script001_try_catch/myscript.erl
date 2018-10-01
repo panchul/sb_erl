@@ -3,6 +3,8 @@
 %
 % Runs as a regular script (erlang has to be installed on the machine)
 %
+% $ myscript.erl test
+%
 
 main([Arg]) ->
   try
@@ -21,8 +23,10 @@ main([Arg]) ->
     F = Fun(Arg),
     io:format("Input ~w => output ~w\n", [Arg, F])
   catch
-    _:_ ->
-      io:format("Here goes catch\n", [])
+    % _:_ ->
+    %  io:format("Here goes catch\n", [])
+    A:B ->
+      io:format("Here goes catch \"~w:~w\"\n", [A,B])
   after
     io:format("Here goes after\n")
   end;
@@ -30,9 +34,8 @@ main([Arg]) ->
 main(_) ->
     usage().
   
-    
 usage() ->
-    io:format("usage: myscript.erl [some text string]~n~n"),
+    io:format("~nUsage: myscript.erl [some text string]~n~n"),
     io:format("You can try these or something else:~n"),
     io:format("            \"test\"  - regular test~n"),
     io:format("            \"throw\" - triggering throw~n~n"),

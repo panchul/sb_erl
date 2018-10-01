@@ -1,5 +1,10 @@
 #!/usr/bin/env escript
 
+%
+% run it as a script, ./myscript.erl
+%
+%
+
 -import(lists,[ map/2 ]).
 -import(props,[ set/2 ]).
 
